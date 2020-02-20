@@ -1,13 +1,13 @@
 /////1
-const sayHi = (t) => {
+const sayHi = (time) => {
     let name = prompt('Введите имя');
-    if (t >= 6 && t < 12) {
+    if (time >= 6 && time < 12) {
         console.log(name + ' Доброе утро');
-    } else if (t >= 12 && t < 18) {
+    } else if (time >= 12 && time < 18) {
         console.log(name + ' Добрый день');
-    } else if (t >= 18 && t < 24) {
+    } else if (time >= 18 && time < 24) {
         console.log(name + ' Добрый вечер');
-    } else if (t >= 00 || t == 24 && t < 6) {
+    } else if (time >= 00 || time == 24 && time < 6) {
         console.log(name + ' Доброй ночи');
     }
     else {
@@ -15,15 +15,19 @@ const sayHi = (t) => {
     }
 }
 
-sayHi(1);
+sayHi(6);
+sayHi(12);
+sayHi(18);
+sayHi(00);
 
 
 /////2 
-let correctEmail = 'Qwerty@gmail.com'
-let correctPassword = 'Qwe123'
+const Email = 'Qwerty@gmail.com'
+const Password = 'Qwe123'
 
 
-let checkIsUserValid = (email, password) => {
+
+const checkIsUserValid = (email, password) => {
     if (correctEmail == 'Qwerty@gmail.com' && correctPassword == 'Qwe123') {
         console.log('Доступ разрешен');
     }

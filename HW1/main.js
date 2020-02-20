@@ -79,13 +79,14 @@ getVehicleAttributes();
 
 //4
 nissanAltima.getAttributes = function() {
+	nissanAltima.manufacture = 'New'
     console.log(nissanAltima);
 };
 nissanAltima.getAttributes();
 
 //5
 const arr = [
-   nissanAltima, bmwX5, fiatTipo, peugeot, nissanQashqai
+   nissanAltima, bmwX5, fiatTipo, peugeot, LexusEs
 ];
 
 const getCarByIndex = (index) => {
